@@ -14,11 +14,28 @@
             </StackPanel>
             <Button Content="Connect" Click="Connect_Click"/>
             <Button Content="Disconnect" Click="Disconnect_Click"/>
-            <Button Content="Show_All" Click="Button_Show_All"/>
-                       
+            <Button Content="Show__All" Click="Button_Show_All"/>
+            <Button Content="Show__Name" Click="Button_Show_Name"/>
+            <Button Content="Show__All_Color" Click="Button_Show_All_Color"/>
+            <Button Content="Show__Max_Kkall" Click="Show_Max_Kkall"/>
+            <Button Content="Show__Min_Kkall" Click="Show_Min_Kkall"/>
+            <Button Content="Show__Avg_Kkall" Click="Show_Avg_Kkall"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Canvas.Left="141" Canvas.Top="36">
+            <Button Content="Show__Count__vegetable" Click="Show_Count_vegetable"/>
+            <Button Content="Show__Count__fruits" Click="Show_Count_fruits"/>
+            <Button Content="Show__Count__Product__Color" Click="Show_Count_Product_Color"/>
+            <Button Content="Show__Count__Product__All__Color" Click="Show_Count_Product_All_Color"/>
+            <Button Content="Show__Count__Type__Kkall__Down" Click="Show_Count_Type_Kkall_Down"/>
+            <Button Content="Show__Count__Type__Kkall__Up" Click="Show_Count_Type_Kkall_Up"/>
+            <Button Content="Show__Kkall__Range" Click="Show_Kkall_Range"/>
+            <Button Content="Show__All__Product__Color__Red__Or__Yellow" Click="Show_All_Product_Color_Red_Or_Yellow"/>
         </StackPanel>
         <ListBox x:Name="ListQuery" 
-                 Canvas.Right="300" Canvas.Top="50"
-                 Width="300" Height="200"/>
+                 Canvas.Right="300" Canvas.Top="41"
+                 Width="300" Height="353" HorizontalAlignment="Left" Canvas.Left="400" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dataGrid" Canvas.Left="20" Canvas.Top="241"  Width="334" Height="168"/>
+        <TextBox x:Name="textBox1" Canvas.Left="20" Canvas.Top="208" Height="20" Width="150"/>
+        <TextBox x:Name="textBox2" Canvas.Left="187" Canvas.Top="208" Height="20" Width="150"/>
     </Canvas>
 </Window>
